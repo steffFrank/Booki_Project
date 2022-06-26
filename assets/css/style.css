@@ -4,9 +4,45 @@
     --clr-blue: #0065FC;
     --clr-light-blue:#DEEBFF;
     --clr-grey: #F2F2F2;
+    --clr-black: #000;
+    --clr-white: #fff;
     --fw-black: 900;
     --fw-bold: 700;
     --border-radius: 10px;
     --btn-radius: 30px;
 }
 
+/* Global Styles */
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+}
+body::first-letter {
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4 {
+    font-weight: var(--fw-bold);
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-black);
+}
+
+li::first-letter {
+    text-transform: uppercase;
+}
+
+header, section, main {
+    width: 90%;
+    margin: 0 auto;
+}
