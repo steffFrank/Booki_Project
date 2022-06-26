@@ -14,7 +14,8 @@
     --footer-padding: 20px;
     --font-size-footer: 10px;
     --font-size-nav: 12px;
-    --transition: all 0.7s ease-in-out;
+    --margin-bottom: 20px;
+    --transition: all 0.5s ease-in-out;
 }
 
 /* Global Styles */
@@ -67,6 +68,10 @@ header, section, main {
     margin: 0 auto;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* Header Rules */
 .header {
     position: sticky;
@@ -111,10 +116,11 @@ header, section, main {
 /* Main Rules */
 .main__form {
     display: flex;
+    margin-bottom: var(--margin-bottom);
 }
 .main__title p {
     font-weight: var(--fw-xlight);
-    margin-bottom: 20px;
+    margin-bottom: var(--margin-bottom);
 }
 .main__form i{
     background-color: var(--clr-grey);
@@ -140,7 +146,6 @@ header, section, main {
     background-color: var(--clr-blue);
     border:none;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
-    cursor: pointer;
     transition: var(--transition);
 }
 .main__btn-search:hover {
@@ -153,6 +158,53 @@ header, section, main {
 }
 .fa-location-dot {
     font-size: 10px;
+}
+        /* FILTERS */
+.main__filters {
+    margin-bottom:var(--margin-bottom);
+}
+.main__filters h4{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main__filters button {
+    width: fit-content;
+    position: relative;
+    margin-right: 20px;
+    padding: 0 10px;
+    background-color: var(--clr-white);
+    border-radius: var(--btn-radius);
+    border: 2px solid var(--clr-grey);
+    border-left: none;
+    transition: var(--transition);
+}
+
+.main__filters button:hover {
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+}
+.main__filters .fa-solid {
+    position: relative;
+    left: -10px;
+    border-radius: 50%;
+    padding: 12px;
+    background-color: var(--clr-light-blue);
+    color: var(--clr-blue);
+}
+
+.main__description {
+    font-size: 12px;
+    margin-bottom: var(--margin-bottom);
+}
+
+.main__description .fa-circle-info {
+    margin-right: 10px;
+    color: var(--clr-white);
+    background-color: var(--clr-blue);
+    border: 1px solid var(--clr-grey);
+    border-radius: 50%;
+    font-size: 15px;
 }
 
 
