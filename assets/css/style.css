@@ -8,6 +8,7 @@
     --clr-white: #fff;
     --fw-black: 900;
     --fw-bold: 700;
+    --fw-xlight: 200;
     --border-radius: 10px;
     --btn-radius: 30px;
     --footer-padding: 20px;
@@ -37,11 +38,11 @@ h1, h2, h3, h4 {
     text-transform: capitalize;
 }
 h1 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 h3 {
@@ -106,6 +107,57 @@ header, section, main {
 .nav__item a:hover {
     color: var(--clr-blue);
 }
+
+/* Main Rules */
+.main__form {
+    display: flex;
+}
+.main__title p {
+    font-weight: var(--fw-xlight);
+    margin-bottom: 20px;
+}
+.main__form i{
+    background-color: var(--clr-grey);
+    padding: 9px;
+    border: 1px solid var(--clr-grey);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.main__input {
+    height: 30px;
+    border: 1px solid var(--clr-grey);
+    outline: none;
+}
+
+.main__input::placeholder {
+    color: var(--clr-black);
+    font-weight: var(--fw-black);
+}
+
+.main__btn-search {
+    width: 100px;
+    color: var(--clr-white);
+    background-color: var(--clr-blue);
+    border:none;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.main__btn-search:hover {
+    color: var(--clr-blue);
+    background-color: var(--clr-light-blue);
+}
+
+.main__btn-search::first-letter {
+    text-transform: uppercase;
+}
+.fa-location-dot {
+    font-size: 10px;
+}
+
+
+
+
 
 
 /* Footer Rules */

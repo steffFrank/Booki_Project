@@ -4,10 +4,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
         <script
             src="https://kit.fontawesome.com/9a79da2d45.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -25,22 +25,22 @@
             </nav>
         </header>
         <!-- Main Section -->
-        <main id="acceuil">
-            <div class="main-title">
+        <main id="acceuil" class="main">
+            <div class="main__title">
                 <h1>trouver votre hébergement pour des vacances de rêves</h1>
                 <p>en plein centre ville ou en pleine nature</p>
             </div>
-            <form>
+            <form class="main__form">
                 <label for="city"><i class="fa-solid fa-location-dot"></i></label>
-                <input id="city" name="city" type="text" placeholder="Marseille, France" />
-                <button type="submit">rechercher</button>
+                <input class="main__input" id="city" name="city" type="text" placeholder="Marseille, France" />
+                <button class="main__btn-search" type="submit">rechercher</button>
             </form>
-            <div class="main-filters">
+            <div class="main__filters">
                 <h4>filtres</h4>
-                <button><i class="fa-solid fa-money-bill-wave"></i>économique</button>
-                <button><i class="fa-solid fa-child-reaching"></i>familial</button>
-                <button><i class="fa-solid fa-heart"></i>romantique</button>
-                <button><i class="fa-solid fa-dog"></i>animaux autorisés</button>
+                <button class="main__button"><i class="fa-solid fa-money-bill-wave"></i>économique</button>
+                <button class="main__button"><i class="fa-solid fa-child-reaching"></i>familial</button>
+                <button class="main__button"><i class="fa-solid fa-heart"></i>romantique</button>
+                <button class="main__button"><i class="fa-solid fa-dog"></i>animaux autorisés</button>
             </div>
             <p><i class="fa-solid fa-circle-info"></i>plus de 500 logements sont disponibles dans cette ville</p>
         </main>
