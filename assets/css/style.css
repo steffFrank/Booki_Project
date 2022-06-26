@@ -11,6 +11,9 @@
     --border-radius: 10px;
     --btn-radius: 30px;
     --footer-padding: 20px;
+    --font-size-footer: 10px;
+    --font-size-nav: 12px;
+    --transition: all 0.7s ease-in-out;
 }
 
 /* Global Styles */
@@ -63,18 +66,54 @@ header, section, main {
     margin: 0 auto;
 }
 
+/* Header Rules */
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.header__img {
+    width: 64px;
+    height: 30px;
+    margin: auto 0;
+}
+.nav {
+    width: 200px;
+    /* margin: auto 0; */
+}
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: var(--font-size-nav);
+}
+.nav__item {
+    border-top: 3px solid transparent;
+    width: 85px;
+    padding-top: 15px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.nav__item:hover {
+    border-top: 3px solid var(--clr-blue);
+}
+.nav__item a:hover {
+    color: var(--clr-blue);
+}
+
 
 /* Footer Rules */
 
-footer {
+.footer {
     background-color: var(--clr-grey);
     display: flex;
     padding: var(--footer-padding);
 }
 
-footer div {
+.footer__block {
     width: 32%;
 }
-footer li {
-    font-size: 10px;
+.footer li {
+    font-size: var(--font-size-footer);
 }
