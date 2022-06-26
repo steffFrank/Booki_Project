@@ -1,0 +1,12 @@
+/* Variables */
+
+:root {
+    --clr-blue: #0065FC;
+    --clr-light-blue:#DEEBFF;
+    --clr-grey: #F2F2F2;
+    --fw-black: 900;
+    --fw-bold: 700;
+    --border-radius: 10px;
+    --btn-radius: 30px;
+}
+
