@@ -68,15 +68,20 @@ header, section, main {
 
 /* Header Rules */
 .header {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     height: 60px;
+    z-index: 10;
+    background-color: var(--clr-white);
 }
-
+.header a {
+    margin: auto 0;
+}
 .header__img {
     width: 64px;
     height: 30px;
-    margin: auto 0;
 }
 .nav {
     width: 200px;
