@@ -381,6 +381,31 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+
+    /* ACTIVITES */
+    
+    .wrapper-activites { 
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .wrapper-activites__fig,
+    .wrapper__second div:first-child,
+    .wrapper__fourth div:first-child {
+        box-shadow: 0 10px 5px var(--clr-grey);
+        border-radius: var(--border-radius);
+        margin-bottom: var(--margin-bottom);
+    }
+    
+    .wrapper-activites h4 {
+        padding: 20px;
+    }
+
+    .wrapper-activites img {
+        height: 200px;
+    }
+
+    /* FOOTER */
     .footer {
         flex-direction: column;
         row-gap: var(--gap);
