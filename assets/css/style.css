@@ -16,6 +16,7 @@
     --font-size-nav: 12px;
     --margin-bottom: 20px;
     --padding-section: 2%;
+    --gap: 20px;
     --transition: all 0.5s ease-in-out;
 }
 
@@ -220,7 +221,8 @@ button {
 
 #hebergements {
     display: flex;
-    column-gap: 30px;
+    column-gap: var(--gap);
+    margin-bottom: calc(var(--margin-bottom) * 2);
 }
 
 #hebergements h2 {
@@ -238,7 +240,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    gap: 30px;
+    gap: var(--gap);
     margin-bottom: var(--margin-bottom);
 }
 
@@ -287,7 +289,7 @@ button {
     width: 40%;
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: var(--gap);
     border-radius: var(--border-radius);
     background-color: var(--clr-grey);
     padding: var(--padding-section);
@@ -341,21 +343,28 @@ button {
 
 
 /* Activites Rules */
-#activites figure {
-    background-color: var(--clr-white);
-    border-radius: calc(var(--border-radius) * 2);
-    box-shadow: 10px 10px 10px grey;
-}
-#activites figure img{
-    width: 100%;
-    height: 90%;
-    border-radius: calc(var(--border-radius) * 2) calc(var(--border-radius) * 2) 0 0;
+#activites {
+    margin-bottom: var(--margin-bottom);
 }
 
-.wrapper-activites {
-    display: flex;
-    column-gap: 30px;
+#activites h2 {
+    margin-bottom: var(--margin-bottom);
 }
+
+.wrapper-activites { 
+    display: flex;
+    flex: 1;
+    column-gap: var(--gap);
+}
+
+
+.wrapper-activites img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
 /* Footer Rules */
 
 .footer {
@@ -369,4 +378,21 @@ button {
 }
 .footer li {
     font-size: var(--font-size-footer);
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        row-gap: var(--gap);
+    }
+    .footer__block {
+        width: 100%;
+    }
+
+    .footer li {
+        font-size: calc(var(--font-size-footer) + 2px);
+    }
+    .footer h4 {
+        margin-bottom: 10px;
+    }
 }
