@@ -15,10 +15,11 @@
     --font-size-footer: 10px;
     --font-size-nav: 12px;
     --margin-bottom: 20px;
+    --padding-section: 2%;
     --transition: all 0.5s ease-in-out;
 }
 
-/* Global Styles */
+/* Global Rules */
 
 *,
 *:after,
@@ -64,12 +65,16 @@ li::first-letter {
 }
 
 header, section, main {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
 button {
     cursor: pointer;
+}
+
+.fa-star {
+    font-size: 8px;
 }
 
 /* Header Rules */
@@ -91,7 +96,6 @@ button {
 }
 .nav {
     width: 200px;
-    /* margin: auto 0; */
 }
 .nav ul {
     display: flex;
@@ -207,11 +211,95 @@ button {
     font-size: 15px;
 }
 
+/* Hebergement section */
 
+#hebergements {
+    display: flex;
+    /* justify-content: space-between; */
+    column-gap: 30px;
+}
 
+#hebergements h2 {
+    margin-bottom: var(--margin-bottom);
+}
 
+.hebergements__container {
+    background-color: var(--clr-grey);
+    padding: var(--padding-section);
+    border-radius: var(--border-radius);
+}
 
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 30px;
+    margin-bottom: var(--margin-bottom);
+}
 
+.articles-fig {
+    height: 180px;
+    flex: 1 30%;
+    background-color: var(--clr-white);
+    border-radius: calc(var(--border-radius) * 2);
+    padding: 5px;
+}
+.articles-fig__img {
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.articles-fig p {
+    font-size: 10px; 
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+    border-radius: var(--border-radius);
+    background-color: var(--clr-grey);
+    padding: var(--padding-section);
+}
+
+.aside__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside__title .fa-star{
+    font-size: 10px;
+}
+
+.aside-fig {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    background-color: var(--clr-white);
+    border-radius: calc(var(--border-radius) * 2);
+    padding: 5px;
+}
+
+.aside-fig p {
+    font-size: 10px;
+}
+
+.aside-fig__img {
+    width: 80px;
+    margin-right: 15px;
+    background-color: black;
+    border-radius: calc(var(--border-radius) * 2) 0 0 calc(var(--border-radius) * 2);
+}
+.aside__description {
+    position: relative;
+}
+.aside__description .stars {
+    position: absolute;
+    bottom: 0;
+}
 /* Footer Rules */
 
 .footer {
