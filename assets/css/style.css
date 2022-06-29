@@ -75,6 +75,11 @@ button {
 
 .fa-star {
     font-size: 8px;
+    color: var(--clr-grey);
+}
+
+.checked {
+    color: var(--clr-blue);
 }
 
 /* Header Rules */
@@ -215,7 +220,6 @@ button {
 
 #hebergements {
     display: flex;
-    /* justify-content: space-between; */
     column-gap: 30px;
 }
 
@@ -224,6 +228,7 @@ button {
 }
 
 .hebergements__container {
+    width: 100%;
     background-color: var(--clr-grey);
     padding: var(--padding-section);
     border-radius: var(--border-radius);
@@ -238,27 +243,50 @@ button {
 }
 
 .articles-fig {
-    height: 180px;
+    height: 250px;
     flex: 1 30%;
     background-color: var(--clr-white);
     border-radius: calc(var(--border-radius) * 2);
     padding: 5px;
+    padding-bottom: 0;
 }
+
+.room1 {
+    background: url("../images/hebergements/3_medium/room1.jpg") center;
+}
+.room2 {
+    background: url("../images/hebergements/3_medium/room2.jpg") center;
+}
+.room3 {
+    background: url("../images/hebergements/3_medium/room3.jpg") center;
+}
+.room4 {
+    background: url("../images/hebergements/3_medium/room4.jpg") center;
+}
+.room5 {
+    background: url("../images/hebergements/3_medium/room5.jpg") center
+}
+.room6 {
+    background: url("../images/hebergements/3_medium/room6.jpg") center;
+}
+
 .articles-fig__img {
     width: 100%;
     height: 70%;
-    background-color: black;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
+    background-size: cover;
 }
-
+.articles-fig h4 {
+    margin: 5px 0;
+}
 .articles-fig p {
-    font-size: 10px; 
+    font-size: 10px;
 }
 
 .aside {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     row-gap: 30px;
     border-radius: var(--border-radius);
     background-color: var(--clr-grey);
@@ -272,6 +300,7 @@ button {
 
 .aside__title .fa-star{
     font-size: 10px;
+    color: var(--fw-black);
 }
 
 .aside-fig {
@@ -286,11 +315,20 @@ button {
 .aside-fig p {
     font-size: 10px;
 }
-
+.pop1 {
+    background: url("../images/hebergements/3_medium/pop_room1.jpg") center;
+}
+.pop2 {
+    background: url("../images/hebergements/3_medium/pop_room2.jpg") center;
+}
+.pop3 {
+    background: url("../images/hebergements/3_medium/pop_room3.jpg") center;
+    
+}
 .aside-fig__img {
-    width: 80px;
+    width: 30%;
     margin-right: 15px;
-    background-color: black;
+    background-size: cover;
     border-radius: calc(var(--border-radius) * 2) 0 0 calc(var(--border-radius) * 2);
 }
 .aside__description {
@@ -299,6 +337,24 @@ button {
 .aside__description .stars {
     position: absolute;
     bottom: 0;
+}
+
+
+/* Activites Rules */
+#activites figure {
+    background-color: var(--clr-white);
+    border-radius: calc(var(--border-radius) * 2);
+    box-shadow: 10px 10px 10px grey;
+}
+#activites figure img{
+    width: 100%;
+    height: 90%;
+    border-radius: calc(var(--border-radius) * 2) calc(var(--border-radius) * 2) 0 0;
+}
+
+.wrapper-activites {
+    display: flex;
+    column-gap: 30px;
 }
 /* Footer Rules */
 
