@@ -132,11 +132,13 @@ button {
     font-weight: var(--fw-xlight);
     margin-bottom: var(--margin-bottom);
 }
-.main__form i{
+
+.fa-location-dot{
     background-color: var(--clr-grey);
     padding: 9px;
     border: 1px solid var(--clr-grey);
     border-radius: var(--border-radius) 0 0 var(--border-radius);
+    font-size: 10px;
 }
 
 .main__input {
@@ -148,6 +150,10 @@ button {
 .main__input::placeholder {
     color: var(--clr-black);
     font-weight: var(--fw-black);
+}
+
+.main__btn-mobile {
+    display: none;
 }
 
 .main__btn-search {
@@ -166,9 +172,7 @@ button {
 .main__btn-search::first-letter {
     text-transform: uppercase;
 }
-.fa-location-dot {
-    font-size: 10px;
-}
+
         /* FILTERS */
 .main__filters {
     margin-bottom:var(--margin-bottom);
@@ -382,6 +386,51 @@ button {
 
 @media screen and (max-width: 768px) {
 
+    /* MAIN */
+    .main__form {
+        width: 95%;
+        margin: var(--margin-bottom) auto;
+    }
+    .main__input {
+        width: 100%;
+        height: 40px;
+        border-right: none;
+    }
+    
+    .fa-location-dot{
+        width: 40px;
+        height: 40px;
+        padding: 12px 14px;
+        font-size: 15px;
+    }
+
+    .main__input::placeholder {
+        padding-left: 15px;
+    }
+
+    .main__btn-search {
+        display: none;
+    }
+
+    .main__btn-mobile {
+        display: block;
+        width: 50px;
+        border:none;
+        background-color: var(--clr-blue);
+        transition: var(--transition);
+        border-radius: var(--border-radius);
+        position: relative;
+        right: 5px;
+    }
+
+    .main__btn-mobile:hover {
+        color: var(--clr-blue);
+        background-color: var(--clr-light-blue);
+    }
+
+    .fa-magnifying-glass {
+        color: white;
+    }
     /* ACTIVITES */
     
     .wrapper-activites { 
@@ -393,16 +442,16 @@ button {
     .wrapper__second div:first-child,
     .wrapper__fourth div:first-child {
         box-shadow: 0 10px 5px var(--clr-grey);
-        border-radius: var(--border-radius);
+        border-radius: calc(var(--border-radius) * 2);
         margin-bottom: var(--margin-bottom);
     }
-    
+
     .wrapper-activites h4 {
         padding: 20px;
     }
 
     .wrapper-activites img {
-        height: 200px;
+        height: 150px;
     }
 
     /* FOOTER */
