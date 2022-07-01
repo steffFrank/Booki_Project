@@ -8,6 +8,7 @@
     --clr-white: #fff;
     --fw-black: 900;
     --fw-bold: 700;
+    --fw-regular: 400;
     --fw-xlight: 200;
     --border-radius: 10px;
     --btn-radius: 30px;
@@ -389,7 +390,19 @@ button {
 @media screen and (max-width: 768px) {
 
     /* MAIN */
-    
+    .main__title {
+        width: 90%;
+        margin: auto;
+    }
+    .main__title h1 {
+        font-size: 18px;
+        margin-bottom: calc(var(--margin-bottom)/2);
+    }
+
+    .main__title p {
+        font-size: 14px;
+        font-weight: var(--fw-regular);
+    }
     .main__form {
         width: 95%;
         margin: var(--margin-bottom) auto;
