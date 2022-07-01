@@ -129,6 +129,14 @@ button {
     display: flex;
     margin-bottom: var(--margin-bottom);
 }
+
+.main__title h1 {
+    text-transform: unset;
+}
+.main__title p::first-letter {
+    text-transform: uppercase;
+}
+
 .main__title p {
     font-weight: var(--fw-xlight);
     margin-bottom: var(--margin-bottom);
