@@ -192,6 +192,8 @@ button {
     border: 2px solid var(--clr-grey);
     border-left: none;
     transition: var(--transition);
+    text-transform: capitalize;
+    font-weight: var(--fw-bold);
 }
 
 .main__filters button:hover {
@@ -387,6 +389,7 @@ button {
 @media screen and (max-width: 768px) {
 
     /* MAIN */
+    
     .main__form {
         width: 95%;
         margin: var(--margin-bottom) auto;
@@ -430,6 +433,51 @@ button {
 
     .fa-magnifying-glass {
         color: white;
+    }
+
+   /* FILTERS */
+
+   .main__filters {
+        margin-bottom:var(--margin-bottom);
+        padding-left: 10px;
+    }
+    .main__filters h4{
+        display: block;
+        font-size: 14px;
+        margin-bottom: calc(var(--margin-bottom) / 2);
+    }
+
+    .main__filters button {
+        width: fit-content;
+        margin-bottom: calc(var(--margin-bottom)/2);
+        
+    }
+
+    .main__filters button:hover {
+        background-color: var(--clr-blue);
+        color: var(--clr-white);
+    }
+    .main__filters .fa-solid {
+        position: relative;
+        left: -10px;
+        border-radius: 50%;
+        padding: 12px;
+        background-color: var(--clr-light-blue);
+        color: var(--clr-blue);
+    }
+
+    .main__description {
+        font-size: 12px;
+        margin-bottom: var(--margin-bottom);
+    }
+
+    .main__description .fa-circle-info {
+        margin-right: 10px;
+        color: var(--clr-white);
+        background-color: var(--clr-blue);
+        border: 1px solid var(--clr-grey);
+        border-radius: 50%;
+        font-size: 15px;
     }
     /* ACTIVITES */
     
