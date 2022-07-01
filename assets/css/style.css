@@ -537,6 +537,116 @@ button {
         color: var(--clr-blue);
     }
 
+    /* HEBERGEMENTS */
+
+    #hebergements {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: var(--gap);
+        width: 100%;
+    }
+    
+    /* .hebergements__container {
+        width: 100%;
+        background-color: var(--clr-grey);
+        padding: var(--padding-section);
+        border-radius: var(--border-radius);
+    } */
+    
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: var(--gap);
+        margin-bottom: var(--margin-bottom);
+    }
+    
+    .articles-fig {
+        height: 250px;
+        flex: 1 30%;
+        background-color: var(--clr-white);
+        border-radius: calc(var(--border-radius) * 2);
+        padding: 5px;
+        padding-bottom: 0;
+    }
+    
+    .room1 {
+        background: url("../images/hebergements/3_medium/room1.jpg") center;
+    }
+    .room2 {
+        background: url("../images/hebergements/3_medium/room2.jpg") center;
+    }
+    .room3 {
+        background: url("../images/hebergements/3_medium/room3.jpg") center;
+    }
+    .room4 {
+        background: url("../images/hebergements/3_medium/room4.jpg") center;
+    }
+    .room5 {
+        background: url("../images/hebergements/3_medium/room5.jpg") center
+    }
+    .room6 {
+        background: url("../images/hebergements/3_medium/room6.jpg") center;
+    }
+    
+    .articles-fig__img {
+        width: 100%;
+        height: 70%;
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+        background-size: cover;
+    }
+    .articles-fig h4 {
+        margin: 5px 0;
+    }
+    .articles-fig p {
+        font-size: 10px;
+    }
+    
+    .aside {
+        width: 100%;
+        row-gap: var(--gap);
+        padding: calc(var(--padding-section) * 2);
+    }
+    
+    .aside__title {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .aside__title h3,
+    .aside__title .fa-star {
+        font-size: 18px;
+    }
+    
+    .aside-fig {
+        width: 100%;
+        height: 140px;
+    }
+    
+    .aside-fig p {
+        font-size: 14px;
+    }
+    .pop1 {
+        background: url("../images/hebergements/3_medium/pop_room1.jpg") center;
+    }
+    .pop2 {
+        background: url("../images/hebergements/3_medium/pop_room2.jpg") center;
+    }
+    .pop3 {
+        background: url("../images/hebergements/3_medium/pop_room3.jpg") center;
+        
+    }
+    .aside-fig__img {
+        width: 40%;
+    }
+    .aside__description {
+        left: 5px;
+    }
+
+    .aside__description h4 {
+        font-size: 14px;
+    }
+
     /* ACTIVITES */
     
     .wrapper-activites { 
