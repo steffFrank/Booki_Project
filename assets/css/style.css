@@ -350,12 +350,13 @@ button {
     
 }
 .aside-fig__img {
-    width: 30%;
+    width: 40%;
     margin-right: 15px;
     background-size: cover;
     border-radius: calc(var(--border-radius) * 2) 0 0 calc(var(--border-radius) * 2);
 }
 .aside__description {
+    width: 50%;
     position: relative;
 }
 .aside__description .stars {
@@ -546,12 +547,12 @@ button {
         width: 100%;
     }
     
-    /* .hebergements__container {
+    .hebergements__container {
         width: 100%;
-        background-color: var(--clr-grey);
+        background-color: var(--clr-white);
         padding: var(--padding-section);
         border-radius: var(--border-radius);
-    } */
+    }
     
     .articles {
         display: flex;
@@ -606,11 +607,7 @@ button {
         width: 100%;
         row-gap: var(--gap);
         padding: calc(var(--padding-section) * 2);
-    }
-    
-    .aside__title {
-        display: flex;
-        justify-content: space-between;
+        border-radius: 0;
     }
 
     .aside__title h3,
@@ -628,20 +625,17 @@ button {
     }
     .pop1 {
         background: url("../images/hebergements/3_medium/pop_room1.jpg") center;
+        background-size: cover;
     }
     .pop2 {
         background: url("../images/hebergements/3_medium/pop_room2.jpg") center;
-    }
+        background-size: cover;
+    }       
     .pop3 {
         background: url("../images/hebergements/3_medium/pop_room3.jpg") center;
-        
+        background-size: cover;
     }
-    .aside-fig__img {
-        width: 40%;
-    }
-    .aside__description {
-        left: 5px;
-    }
+
 
     .aside__description h4 {
         font-size: 14px;
