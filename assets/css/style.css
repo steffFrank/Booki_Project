@@ -258,6 +258,13 @@ button {
     border-radius: var(--border-radius);
 }
 
+.hebergements__container p:last-child {
+    font-weight: var(--fw-bold);
+}
+.hebergements__container p:last-child::first-letter {
+    text-transform: uppercase;
+}
+
 .articles {
     display: flex;
     flex-wrap: wrap;
@@ -271,8 +278,7 @@ button {
     flex: 1 30%;
     background-color: var(--clr-white);
     border-radius: calc(var(--border-radius) * 2);
-    padding: 5px;
-    padding-bottom: 0;
+    padding: 5px 5px 5px 0;
 }
 
 .room1 {
@@ -305,6 +311,10 @@ button {
 }
 .articles-fig p {
     font-size: 10px;
+}
+
+.articles-fig p::first-letter {
+    text-transform: uppercase;
 }
 
 .aside {
@@ -403,7 +413,7 @@ button {
     font-size: var(--font-size-footer);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     /* HEADER */ 
 
@@ -551,22 +561,13 @@ button {
         background-color: var(--clr-white);
     }
     
-    .articles {
-        display: flex;
-        /* flex-direction: column; */
-        /* margin: auto; */
-        row-gap: var(--gap);
-    }
-    
     .articles-fig {
-        width: 100%;
-        height: 250px;
-        flex: 1 80%;
-        background-color: var(--clr-white);
-        border-radius: var(--border-radius);
+        width: 300px;
+        height: 200px;
+        flex: none;
+        margin: 0 auto;
+        border-radius: calc(var(--border-radius) * 2);
         box-shadow: 0 10px 10px 10px var(--clr-grey);
-        padding: 5px;
-        padding-bottom: 0;
     }
     
     .room1 {
@@ -589,13 +590,16 @@ button {
     }
     
     .articles-fig__img {
-        width: 100%;
-        height: 70%;
+        width: 300px;
+        height: 60%;
         border-radius: var(--border-radius) var(--border-radius) 0 0;
         background-size: cover;
     }
+    .articles-fig div:nth-child(2) {
+        padding-left: 5px;
+    }
     .articles-fig h4 {
-        margin: 5px 0;
+        margin: 10px 0 0 0;
     }
     .articles-fig p {
         font-size: 14px;
@@ -615,8 +619,8 @@ button {
     }
     
     .aside-fig {
-        width: 100%;
         height: 140px;
+        margin: auto;
     }
     
     .aside-fig p {
@@ -639,14 +643,20 @@ button {
     .aside__description h4 {
         font-size: 14px;
     }
-
+    .fa-star {
+        font-size: 10px;
+    }
     /* ACTIVITES */
     
     .wrapper-activites { 
-        display: flex;
         flex-direction: column;
     }
-  
+    
+    .wrapper-activites__fig {
+        width: 300px;
+        margin: auto;
+    }
+
     .wrapper-activites__fig,
     .wrapper__second div:first-child,
     .wrapper__fourth div:first-child {
@@ -654,7 +664,7 @@ button {
         border-radius: calc(var(--border-radius) * 2);
         margin-bottom: var(--margin-bottom);
     }
-
+    
     .wrapper-activites h4 {
         padding: 20px;
     }
