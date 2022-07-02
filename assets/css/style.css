@@ -79,6 +79,9 @@ button {
 .checked {
     color: var(--clr-blue);
 }
+span {
+    font-weight: var(--fw-bold);
+}
 
 /* Header Rules */
 .header {
@@ -87,21 +90,21 @@ button {
     top: 0;
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 70px;
     z-index: 10;
     background-color: var(--clr-white);
-    padding: var(--padding-section);
     margin-bottom: var(--margin-bottom);
 }
 .header a {
-    margin: auto 0;
+    margin: auto var(--padding-section);
 }
 .header__img {
     width: 64px;
     height: 30px;
 }
 .nav {
-    width: 200px;
+    width: 250px;
+    margin-right: var(--padding-section);
 }
 .nav ul {
     display: flex;
@@ -111,7 +114,7 @@ button {
 .nav__item {
     border-top: 3px solid transparent;
     width: 85px;
-    padding-top: 15px;
+    padding-top: 20px;
     text-align: center;
     transition: var(--transition);
 }
@@ -119,6 +122,7 @@ button {
 .nav__item:hover {
     border-top: 3px solid var(--clr-blue);
 }
+
 .nav__item a:hover {
     color: var(--clr-blue);
 }
@@ -742,7 +746,7 @@ button {
 
     /* FOOTER */
     .footer {
-        flex-direction: column;
+        flex-wrap: wrap;
         row-gap: var(--gap);
     }
     .footer__block {
