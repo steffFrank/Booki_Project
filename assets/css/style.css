@@ -29,17 +29,17 @@
     box-sizing: border-box;
 }
 
+*::first-letter {
+    text-transform: uppercase;
+}
+
 body {
     font-family: "Raleway", sans-serif;
     text-align: left;
 }
-body::first-letter {
-    text-transform: uppercase;
-}
 
 h1, h2, h3, h4 {
     font-weight: var(--fw-bold);
-    text-transform: capitalize;
 }
 h1 {
     font-size: 20px;
@@ -62,10 +62,6 @@ a {
     color: var(--clr-black);
 }
 
-li::first-letter {
-    text-transform: uppercase;
-}
-
 header, section, main {
     width: 95%;
     margin: 0 auto;
@@ -86,6 +82,7 @@ button {
 
 /* Header Rules */
 .header {
+    width: 100%;
     position: sticky;
     top: 0;
     display: flex;
@@ -130,13 +127,6 @@ button {
     margin-bottom: var(--margin-bottom);
 }
 
-.main__title h1 {
-    text-transform: unset;
-}
-.main__title p::first-letter {
-    text-transform: uppercase;
-}
-
 .main__title p {
     font-weight: var(--fw-xlight);
     margin-bottom: var(--margin-bottom);
@@ -176,10 +166,6 @@ button {
 .main__btn-search:hover {
     color: var(--clr-blue);
     background-color: var(--clr-light-blue);
-}
-
-.main__btn-search::first-letter {
-    text-transform: uppercase;
 }
 
         /* FILTERS */
@@ -236,9 +222,6 @@ button {
     font-size: 14px;
 }
 
-.main__description p::first-letter {
-    text-transform: uppercase;
-}
 /* Hebergement section */
 
 #hebergements {
@@ -260,9 +243,6 @@ button {
 
 .hebergements__container p:last-child {
     font-weight: var(--fw-bold);
-}
-.hebergements__container p:last-child::first-letter {
-    text-transform: uppercase;
 }
 
 .articles {
@@ -311,10 +291,6 @@ button {
 }
 .articles-fig p {
     font-size: 10px;
-}
-
-.articles-fig p::first-letter {
-    text-transform: uppercase;
 }
 
 .aside {
@@ -413,59 +389,28 @@ button {
     font-size: var(--font-size-footer);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
 
     /* HEADER */ 
 
-    .header {
-        width: 100%;
-        flex-direction: column;
-        height: 100px;
-        margin-bottom: var(--margin-bottom)
-    }
-    .header a {
-        margin: auto;
-    }
-
-    .header__img {
-        width: 85px;
-        height: 40px;
-    }
-    .nav {
-        width: 100%;
-    }
-
-    .nav__item {
-        border-top: none;
-        border-bottom: 3px solid var(--clr-grey);
-        width: 50%;
-        padding: 0 0 10px 0;
-        transition: var(--transition);
-    }
-    
-    .nav__item:hover {
-        border-top: none;
-        border-bottom: 3px solid var(--clr-blue);
-    }
-
     /* MAIN */
     .main__title {
-        width: 90%;
-        margin: auto;
+        text-align: center;
     }
+
     .main__title h1 {
-        font-size: 18px;
         margin-bottom: calc(var(--margin-bottom)/2);
     }
 
     .main__title p {
-        font-size: 14px;
         font-weight: var(--fw-regular);
     }
+
     .main__form {
-        width: 95%;
+        width: 60%;
         margin: var(--margin-bottom) auto;
     }
+
     .main__input {
         width: 100%;
         height: 40px;
@@ -529,24 +474,6 @@ button {
         margin-bottom: calc(var(--margin-bottom) / 2);
     }
 
-    .main__filters button {
-        width: fit-content;
-        margin-bottom: calc(var(--margin-bottom)/2);
-        
-    }
-
-    .main__filters button:hover {
-        background-color: var(--clr-blue);
-        color: var(--clr-white);
-    }
-    .main__filters .fa-solid {
-        position: relative;
-        left: -10px;
-        border-radius: 50%;
-        padding: 12px;
-        background-color: var(--clr-light-blue);
-        color: var(--clr-blue);
-    }
 
     /* HEBERGEMENTS */
 
@@ -588,6 +515,9 @@ button {
     .room6 {        
         background: url("../images/hebergements/3_medium/room6.jpg") center;
     }
+    .articles-fig div:nth-child(2) {
+        padding-left: 10px;
+    }
     
     .articles-fig__img {
         width: 300px;
@@ -595,9 +525,7 @@ button {
         border-radius: var(--border-radius) var(--border-radius) 0 0;
         background-size: cover;
     }
-    .articles-fig div:nth-child(2) {
-        padding-left: 5px;
-    }
+
     .articles-fig h4 {
         margin: 10px 0 0 0;
     }
@@ -615,17 +543,21 @@ button {
 
     .aside__title h3,
     .aside__title .fa-star {
-        font-size: 18px;
+        font-size: 22px;
     }
     
     .aside-fig {
-        height: 140px;
+        width: 95%;
+        height: 250px;
         margin: auto;
     }
-    
-    .aside-fig p {
-        font-size: 14px;
+    .aside-fig__img {
+        width: 80%;
     }
+    .aside-fig p {
+        font-size: 16px;
+    }
+    
     .pop1 {
         background: url("../images/hebergements/3_medium/pop_room1.jpg") center;
         background-size: cover;
@@ -641,11 +573,144 @@ button {
 
 
     .aside__description h4 {
-        font-size: 14px;
+        font-size: 18px;
     }
     .fa-star {
         font-size: 10px;
     }
+    /* ACTIVITES */
+    /* #activites {
+        height: 60vw;
+    } */
+
+    .wrapper-activites__fig,
+    .wrapper__second div:first-child,
+    .wrapper__fourth div:first-child {
+        box-shadow: 0 10px 5px var(--clr-grey);
+        border-radius: calc(var(--border-radius) * 2);
+        margin-bottom: var(--margin-bottom);
+    }
+
+    /* FOOTER */
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        height: 100px;
+        margin-bottom: var(--margin-bottom);
+    }
+
+    .header a {
+        margin: auto;
+    }
+
+    .header__img {
+        width: 85px;
+        height: 40px;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav__item {
+        border-top: none;
+        border-bottom: 3px solid var(--clr-grey);
+        width: 50%;
+        padding: 0 0 10px 0;
+        transition: var(--transition);
+    }
+    
+    .nav__item:hover {
+        border-top: none;
+        border-bottom: 3px solid var(--clr-blue);
+    }
+
+    /* MAIN */
+    .main__title {
+        width: 95%;
+        text-align: left;
+    }
+    .main__title h1 {
+        font-size: 16px;
+    }
+
+    .main__title p {
+        font-size: 14px;
+    }
+    .main__form {
+        width: 95%;
+    }
+
+   /* FILTERS */
+
+    .main__filters button {
+        margin-bottom: calc(var(--margin-bottom)/2);
+    }
+
+    /* HEBERGEMENTS */
+    .room1 {
+        background: url("../images/hebergements/3_medium/room1.jpg") center;
+    }
+    .room2 {
+        background: url("../images/hebergements/3_medium/room2.jpg") center;
+    }
+    .room3 {
+        background: url("../images/hebergements/3_medium/room3.jpg") center;
+    }
+    .room4 {
+        background: url("../images/hebergements/3_medium/room4.jpg") center;
+    }
+    .room5 {
+        background: url("../images/hebergements/3_medium/room5.jpg") center
+    }
+    .room6 {        
+        background: url("../images/hebergements/3_medium/room6.jpg") center;
+    }
+    
+    .articles-fig__img {
+        background-size: cover;
+    }
+    
+     
+    /* ASIDE */
+    .aside__title h3,
+    .aside__title .fa-star {
+        font-size: 14px;
+    }
+    
+    .aside-fig {
+        height: 150px;
+    }
+    
+    .aside-fig__img {
+        width: 40%;
+    }
+
+    .aside-fig p {
+        font-size: 10px;
+    }
+
+    .aside__description h4 {
+        font-size: 12px;
+    }
+
+    .pop1 {
+        background: url("../images/hebergements/3_medium/pop_room1.jpg") center;
+        background-size: cover;
+    }
+    .pop2 {
+        background: url("../images/hebergements/3_medium/pop_room2.jpg") center;
+        background-size: cover;
+    }       
+    .pop3 {
+        background: url("../images/hebergements/3_medium/pop_room3.jpg") center;
+        background-size: cover;
+    }
+
+
+    
     /* ACTIVITES */
     
     .wrapper-activites { 
@@ -655,22 +720,15 @@ button {
     .wrapper-activites__fig {
         width: 300px;
         margin: auto;
+        margin-bottom: 20px;
     }
 
-    .wrapper-activites__fig,
-    .wrapper__second div:first-child,
-    .wrapper__fourth div:first-child {
-        box-shadow: 0 10px 5px var(--clr-grey);
-        border-radius: calc(var(--border-radius) * 2);
-        margin-bottom: var(--margin-bottom);
-    }
-    
     .wrapper-activites h4 {
         padding: 20px;
     }
 
     .wrapper-activites img {
-        height: 150px;
+        height: 200px;
     }
 
     /* FOOTER */
