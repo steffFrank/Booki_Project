@@ -87,9 +87,11 @@ button {
     top: 0;
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    height: 100px;
     z-index: 10;
     background-color: var(--clr-white);
+    padding: var(--padding-section);
+    margin-bottom: var(--margin-bottom);
 }
 .header a {
     margin: auto 0;
@@ -179,16 +181,16 @@ button {
 
 .main__filters button {
     width: fit-content;
-    position: relative;
     margin-right: 20px;
     padding: 0 10px;
     background-color: var(--clr-white);
     border-radius: var(--btn-radius);
     border: 2px solid var(--clr-grey);
     border-left: none;
-    transition: var(--transition);
     text-transform: capitalize;
     font-weight: var(--fw-bold);
+    transition: var(--transition);
+    
 }
 
 .main__filters button:hover {
@@ -211,11 +213,12 @@ button {
 
 .main__description i {
     margin: 0 10px;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     color: var(--clr-white);
     background-color: var(--clr-blue);
     border-radius: 50%;
+    font-size: 25px;
 }
 
 .main__description p {
@@ -254,7 +257,7 @@ button {
 }
 
 .articles-fig {
-    height: 250px;
+    height: 200px;
     flex: 1 30%;
     background-color: var(--clr-white);
     border-radius: calc(var(--border-radius) * 2);
@@ -282,7 +285,7 @@ button {
 
 .articles-fig__img {
     width: 100%;
-    height: 70%;
+    height: 60%;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     background-size: cover;
 }
@@ -308,14 +311,15 @@ button {
     justify-content: space-between;
 }
 
+.aside__title h3,
 .aside__title .fa-star{
-    font-size: 10px;
-    color: var(--fw-black);
+    font-size: 16px;
+    color: var(--clr-black);
 }
 
 .aside-fig {
     width: 100%;
-    height: 30%;
+    height: 25%;
     display: flex;
     background-color: var(--clr-white);
     border-radius: calc(var(--border-radius) * 2);
@@ -353,7 +357,7 @@ button {
 
 /* Activites Rules */
 #activites {
-    margin-bottom: var(--margin-bottom);
+    margin-bottom: 50px;
 }
 
 #activites h2 {
@@ -362,16 +366,33 @@ button {
 
 .wrapper-activites { 
     display: flex;
-    flex: 1;
     column-gap: var(--gap);
 }
 
+.wrapper-activites__fig {
+    flex: 1;
+}
+.wrapper-activites__fig,
+    .wrapper__second figure:first-child,
+    .wrapper__fourth figure:first-child {
+        box-shadow: 0 10px 5px var(--clr-grey);
+        border-radius: calc(var(--border-radius) * 2);
+        margin-bottom: var(--margin-bottom);
+}
 
 .wrapper-activites img {
-    display: block;
     width: 100%;
-    height: 300px;
+    height: 85%;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.wrapper__second img,
+.wrapper__fourth img {
+    height: 150px ;
+}
+
+.wrapper-activites h4 {
+    padding: 20px;
 }
 
 /* Footer Rules */
@@ -388,6 +409,9 @@ button {
 .footer li {
     font-size: var(--font-size-footer);
 }
+
+
+/* ================ TABLET ================= */
 
 @media screen and (max-width: 991px) {
 
@@ -456,11 +480,6 @@ button {
         font-size: 16px;
         margin-bottom: var(--margin-bottom);
     }
-    
-    .main__description .fa-circle-info {
-        font-size: 20px;
-    }
-
 
    /* FILTERS */
 
@@ -583,22 +602,16 @@ button {
         height: 60vw;
     } */
 
-    .wrapper-activites__fig,
-    .wrapper__second div:first-child,
-    .wrapper__fourth div:first-child {
-        box-shadow: 0 10px 5px var(--clr-grey);
-        border-radius: calc(var(--border-radius) * 2);
-        margin-bottom: var(--margin-bottom);
-    }
+    
 
     /* FOOTER */
 }
 
+/* ==================== MOBILE =============== */
+
 @media screen and (max-width: 767px) {
     .header {
         flex-direction: column;
-        height: 100px;
-        margin-bottom: var(--margin-bottom);
     }
 
     .header a {
@@ -721,10 +734,6 @@ button {
         width: 300px;
         margin: auto;
         margin-bottom: 20px;
-    }
-
-    .wrapper-activites h4 {
-        padding: 20px;
     }
 
     .wrapper-activites img {
