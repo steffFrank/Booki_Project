@@ -267,9 +267,9 @@ span {
 .articles-fig {
     height: 200px;
     flex: 1 30%;
+    padding: 5px;
     background-color: var(--clr-white);
     border-radius: calc(var(--border-radius) * 2);
-    padding: 5px 5px 5px 0;
     transition: all 0.4s ease-in-out;
 }
 
@@ -299,6 +299,7 @@ span {
 .articles-fig__img {
     width: 100%;
     height: 60%;
+    margin-right: auto;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     background-size: cover;
 }
@@ -548,12 +549,6 @@ span {
         background: url("../images/hebergements/3_medium/room6.jpg") center;
     }
     
-    .articles-fig__img {
-        width: 300px;
-        height: 60%;
-        border-radius: var(--border-radius) var(--border-radius) 0 0;
-        background-size: cover;
-    }
 
     .articles-fig h4 {
         margin: 10px 0 0 0;
