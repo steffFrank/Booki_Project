@@ -18,7 +18,7 @@
     --margin-bottom: 20px;
     --padding-section: 2%;
     --gap: 20px;
-    --transition: all 0.5s ease-in-out;
+    /* --transition: all 0.5s ease-in-out; Warning during validation*/
 }
 
 /* Global Rules */
@@ -116,7 +116,7 @@ span {
     width: 85px;
     padding-top: 20px;
     text-align: center;
-    transition: var(--transition);
+    transition: all 0.4s ease-in-out;
 }
 
 .nav__item:hover {
@@ -167,7 +167,7 @@ span {
     background-color: var(--clr-blue);
     border:none;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
-    transition: var(--transition);
+    transition: all 0.4s ease-in-out;
 }
 .main__btn-search:hover {
     color: var(--clr-blue);
@@ -193,7 +193,7 @@ span {
     border-left: none;
     text-transform: capitalize;
     font-weight: var(--fw-bold);
-    transition: var(--transition);
+    transition: all 0.4s ease-in-out;
     
 }
 
@@ -260,14 +260,23 @@ span {
     margin-bottom: var(--margin-bottom);
 }
 
+.articles-fig div:nth-child(2) {
+    padding-left: 10px;
+}
+
 .articles-fig {
     height: 200px;
     flex: 1 30%;
     background-color: var(--clr-white);
     border-radius: calc(var(--border-radius) * 2);
     padding: 5px 5px 5px 0;
+    transition: all 0.4s ease-in-out;
 }
 
+.articles-fig:hover,
+.aside-fig:hover {
+    box-shadow: -10px 10px 3px 5px var(--clr-light-blue);
+}
 .room1 {
     background: url("../images/hebergements/3_medium/room1.jpg") center;
 }
@@ -465,7 +474,7 @@ span {
         width: 50px;
         border:none;
         background-color: var(--clr-blue);
-        transition: var(--transition);
+        transition: all 0.4s ease-in-out;
         border-radius: var(--border-radius);
         position: relative;
         right: 5px;
@@ -537,9 +546,6 @@ span {
     }
     .room6 {        
         background: url("../images/hebergements/3_medium/room6.jpg") center;
-    }
-    .articles-fig div:nth-child(2) {
-        padding-left: 10px;
     }
     
     .articles-fig__img {
@@ -636,7 +642,7 @@ span {
         border-bottom: 3px solid var(--clr-grey);
         width: 50%;
         padding: 0 0 10px 0;
-        transition: var(--transition);
+        transition: all 0.4s ease-in-out;
     }
     
     .nav__item:hover {
