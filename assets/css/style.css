@@ -278,22 +278,22 @@ span {
     box-shadow: -10px 10px 3px 5px var(--clr-light-blue);
 }
 .room1 {
-    background: url("../images/hebergements/3_medium/room1.jpg") center;
+    background: url("../images/hebergements/2_large/room1.jpg") center;
 }
 .room2 {
-    background: url("../images/hebergements/3_medium/room2.jpg") center;
+    background: url("../images/hebergements/2_large/room2.jpg") center;
 }
 .room3 {
-    background: url("../images/hebergements/3_medium/room3.jpg") center;
+    background: url("../images/hebergements/2_large/room3.jpg") center;
 }
 .room4 {
-    background: url("../images/hebergements/3_medium/room4.jpg") center;
+    background: url("../images/hebergements/2_large/room4.jpg") center;
 }
 .room5 {
-    background: url("../images/hebergements/3_medium/room5.jpg") center
+    background: url("../images/hebergements/2_large/room5.jpg") center
 }
 .room6 {
-    background: url("../images/hebergements/3_medium/room6.jpg") center;
+    background: url("../images/hebergements/2_large/room6.jpg") center;
 }
 
 .articles-fig__img {
@@ -344,13 +344,13 @@ span {
     font-size: 10px;
 }
 .pop1 {
-    background: url("../images/hebergements/3_medium/pop_room1.jpg") center;
+    background: url("../images/hebergements/2_large/pop_room1.jpg") center;
 }
 .pop2 {
-    background: url("../images/hebergements/3_medium/pop_room2.jpg") center;
+    background: url("../images/hebergements/2_large/pop_room2.jpg") center;
 }
 .pop3 {
-    background: url("../images/hebergements/3_medium/pop_room3.jpg") center;
+    background: url("../images/hebergements/2_large/pop_room3.jpg") center;
     
 }
 .aside-fig__img {
@@ -672,22 +672,22 @@ span {
 
     /* HEBERGEMENTS */
     .room1 {
-        background: url("../images/hebergements/3_medium/room1.jpg") center;
+        background: url("../images/hebergements/4_small/room1.jpg") center;
     }
     .room2 {
-        background: url("../images/hebergements/3_medium/room2.jpg") center;
+        background: url("../images/hebergements/4_small/room2.jpg") center;
     }
     .room3 {
-        background: url("../images/hebergements/3_medium/room3.jpg") center;
+        background: url("../images/hebergements/4_small/room3.jpg") center;
     }
     .room4 {
-        background: url("../images/hebergements/3_medium/room4.jpg") center;
+        background: url("../images/hebergements/4_small/room4.jpg") center;
     }
     .room5 {
-        background: url("../images/hebergements/3_medium/room5.jpg") center
+        background: url("../images/hebergements/4_small/room5.jpg") center
     }
     .room6 {        
-        background: url("../images/hebergements/3_medium/room6.jpg") center;
+        background: url("../images/hebergements/4_small/room6.jpg") center;
     }
     
     .articles-fig__img {
@@ -718,15 +718,15 @@ span {
     }
 
     .pop1 {
-        background: url("../images/hebergements/3_medium/pop_room1.jpg") center;
+        background: url("../images/hebergements/4_small/pop_room1.jpg") center;
         background-size: cover;
     }
     .pop2 {
-        background: url("../images/hebergements/3_medium/pop_room2.jpg") center;
+        background: url("../images/hebergements/4_small/pop_room2.jpg") center;
         background-size: cover;
     }       
     .pop3 {
-        background: url("../images/hebergements/3_medium/pop_room3.jpg") center;
+        background: url("../images/hebergements/4_small/pop_room3.jpg") center;
         background-size: cover;
     }
 
