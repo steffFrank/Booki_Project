@@ -523,7 +523,7 @@ span {
     
     .articles-fig {
         width: 300px;
-        height: 200px;
+        height: 250px;
         flex: none;
         margin: 0 auto;
         border-radius: calc(var(--border-radius) * 2);
@@ -606,9 +606,7 @@ span {
         font-size: 10px;
     }
     /* ACTIVITES */
-    /* #activites {
-        height: 60vw;
-    } */
+    
 
     
 
@@ -672,6 +670,9 @@ span {
     }
 
     /* HEBERGEMENTS */
+    .articles-fig {
+        width: 95%;
+    }
     .room1 {
         background: url("../images/hebergements/4_small/room1.jpg") center;
     }
@@ -740,7 +741,7 @@ span {
     }
     
     .wrapper-activites__fig {
-        width: 300px;
+        width: 95%;
         margin: auto;
         margin-bottom: 20px;
     }
