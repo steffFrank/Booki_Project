@@ -549,6 +549,9 @@ span {
         background: url("../images/hebergements/3_medium/room6.jpg") center;
     }
     
+    .articles-fig__img {
+        background-size: cover;
+    }
 
     .articles-fig h4 {
         margin: 10px 0 0 0;
