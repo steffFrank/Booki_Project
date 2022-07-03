@@ -633,6 +633,7 @@ span {
 
     .nav {
         width: 100%;
+        background-color: var(--clr-white);
     }
 
     .nav__item {
