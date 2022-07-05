@@ -71,6 +71,13 @@ main {
     margin: 0 auto;
 }
 
+@media screen and (max-width:2440px) {
+    section,
+    main {
+        width: 70%;
+    }
+}
+
 button {
     cursor: pointer;
 }
