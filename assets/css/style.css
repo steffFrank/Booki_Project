@@ -64,13 +64,6 @@ a {
     color: var(--clr-black);
 }
 
-header, 
-section, 
-main {
-    width: 70%;
-    margin: 0 auto;
-}
-
 button {
     cursor: pointer;
 }
@@ -89,10 +82,12 @@ span {
 
 
 /* =========================DESKTOP=========================== */
+
 /* Header Rules */
 section,
 main {
-    width: 95%;
+    width: 70%;
+    margin: 0 auto;
 }
 .header {
     width: 100%;
@@ -280,7 +275,7 @@ main {
     padding: 5px;
     background-color: var(--clr-white);
     border-radius: calc(var(--border-radius) * 2);
-    transition: all var(--trans-duration) ease-in-out;
+    transition: box-shadow var(--trans-duration) ease-in-out;
 }
 
 .articles-fig:hover,
@@ -348,6 +343,8 @@ main {
     background-color: var(--clr-white);
     border-radius: calc(var(--border-radius) * 2);
     padding: 5px;
+    transition: box-shadow var(--trans-duration) ease-in-out;
+
 }
 
 .aside-fig p {
