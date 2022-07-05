@@ -67,15 +67,8 @@ a {
 header, 
 section, 
 main {
-    width: 95%;
+    width: 70%;
     margin: 0 auto;
-}
-
-@media screen and (max-width:2440px) {
-    section,
-    main {
-        width: 70%;
-    }
 }
 
 button {
@@ -97,6 +90,10 @@ span {
 
 /* =========================DESKTOP=========================== */
 /* Header Rules */
+section,
+main {
+    width: 95%;
+}
 .header {
     width: 100%;
     position: sticky;
@@ -699,6 +696,10 @@ span {
     }
 
     /* HEBERGEMENTS */
+    #hebergements h2,
+    #hebergements p:last-child {
+        margin-left: 15px;
+    }
     .articles-fig {
         width: 95%;
     }
@@ -727,6 +728,10 @@ span {
     
      
     /* ASIDE */
+    .aside__title {
+        width: 90%;
+        margin: auto;
+    }
     .aside__title h3,
     .aside__title .fa-star {
         font-size: 14px;
@@ -764,7 +769,9 @@ span {
 
     
     /* ACTIVITES */
-    
+    #activites h2 {
+        margin-left: 10px;
+    }
     .wrapper-activites { 
         flex-direction: column;
     }
