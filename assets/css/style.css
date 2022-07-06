@@ -79,16 +79,23 @@ button {
 span {
     font-weight: var(--fw-bold);
 }
-
-
 /* =========================DESKTOP=========================== */
-
-/* Header Rules */
 section,
 main {
     width: 70%;
     margin: 0 auto;
 }
+
+/* =========================LAPTOP=========================== */
+@media screen and (max-width: 1200px) {
+                /* Header Rules */
+    section,
+    main {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
 .header {
     width: 100%;
     position: sticky;
@@ -447,10 +454,14 @@ main {
     font-size: var(--font-size-footer);
 }
 
-
 /* ================ TABLET ================= */
 
 @media screen and (max-width: 991px) {
+    section,
+    main {
+        width: 95%;
+        margin: 0 auto;
+    }
 
     /* HEADER */ 
 
