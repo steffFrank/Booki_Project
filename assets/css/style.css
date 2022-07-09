@@ -135,7 +135,7 @@ main {
     border-top: 3px solid var(--clr-blue);
 }
 
-.nav__item a:hover {
+.nav__item:hover > a {
     color: var(--clr-blue);
 }
 
