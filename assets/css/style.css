@@ -289,31 +289,13 @@ main {
 .aside-fig:hover {
     box-shadow: var(--box-shadow);
 }
-.room1 {
-    background: url("../images/hebergements/2_large/room1.jpg") center;
-}
-.room2 {
-    background: url("../images/hebergements/2_large/room2.jpg") center;
-}
-.room3 {
-    background: url("../images/hebergements/2_large/room3.jpg") center;
-}
-.room4 {
-    background: url("../images/hebergements/2_large/room4.jpg") center;
-}
-.room5 {
-    background: url("../images/hebergements/2_large/room5.jpg") center
-}
-.room6 {
-    background: url("../images/hebergements/2_large/room6.jpg") center;
-}
+
 
 .articles-fig__img {
     width: 100%;
     height: 60%;
-    margin-right: auto;
+    object-fit: cover;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
-    background-size: cover;
 }
 .articles-fig h4 {
     margin: 5px 0;
@@ -357,16 +339,7 @@ main {
 .aside-fig p {
     font-size: 10px;
 }
-.pop1 {
-    background: url("../images/hebergements/2_large/pop_room1.jpg") center;
-}
-.pop2 {
-    background: url("../images/hebergements/2_large/pop_room2.jpg") center;
-}
-.pop3 {
-    background: url("../images/hebergements/2_large/pop_room3.jpg") center;
-    
-}
+
 .aside-fig__img {
     width: 40%;
     margin-right: 15px;
@@ -565,29 +538,6 @@ main {
         border-radius: calc(var(--border-radius) * 2);
         box-shadow: 0 10px 10px 10px var(--clr-grey);
     }
-    
-    .room1 {
-        background: url("../images/hebergements/3_medium/room1.jpg") center;
-    }
-    .room2 {
-        background: url("../images/hebergements/3_medium/room2.jpg") center;
-    }
-    .room3 {
-        background: url("../images/hebergements/3_medium/room3.jpg") center;
-    }
-    .room4 {
-        background: url("../images/hebergements/3_medium/room4.jpg") center;
-    }
-    .room5 {
-        background: url("../images/hebergements/3_medium/room5.jpg") center
-    }
-    .room6 {        
-        background: url("../images/hebergements/3_medium/room6.jpg") center;
-    }
-    
-    .articles-fig__img {
-        background-size: cover;
-    }
 
     .articles-fig h4 {
         margin: 10px 0 0 0;
@@ -620,20 +570,6 @@ main {
     .aside-fig p {
         font-size: 16px;
     }
-    
-    .pop1 {
-        background: url("../images/hebergements/3_medium/pop_room1.jpg") center;
-        background-size: cover;
-    }
-    .pop2 {
-        background: url("../images/hebergements/3_medium/pop_room2.jpg") center;
-        background-size: cover;
-    }       
-    .pop3 {
-        background: url("../images/hebergements/3_medium/pop_room3.jpg") center;
-        background-size: cover;
-    }
-
 
     .aside__description h4 {
         font-size: 18px;
@@ -713,28 +649,6 @@ main {
     .articles-fig {
         width: 95%;
     }
-    .room1 {
-        background: url("../images/hebergements/4_small/room1.jpg") center;
-    }
-    .room2 {
-        background: url("../images/hebergements/4_small/room2.jpg") center;
-    }
-    .room3 {
-        background: url("../images/hebergements/4_small/room3.jpg") center;
-    }
-    .room4 {
-        background: url("../images/hebergements/4_small/room4.jpg") center;
-    }
-    .room5 {
-        background: url("../images/hebergements/4_small/room5.jpg") center
-    }
-    .room6 {        
-        background: url("../images/hebergements/4_small/room6.jpg") center;
-    }
-    
-    .articles-fig__img {
-        background-size: cover;
-    }
     
      
     /* ASIDE */
@@ -753,6 +667,7 @@ main {
     
     .aside-fig__img {
         width: 40%;
+        object-fit: cover;
     }
 
     .aside-fig p {
@@ -763,21 +678,6 @@ main {
         font-size: 12px;
     }
 
-    .pop1 {
-        background: url("../images/hebergements/4_small/pop_room1.jpg") center;
-        background-size: cover;
-    }
-    .pop2 {
-        background: url("../images/hebergements/4_small/pop_room2.jpg") center;
-        background-size: cover;
-    }       
-    .pop3 {
-        background: url("../images/hebergements/4_small/pop_room3.jpg") center;
-        background-size: cover;
-    }
-
-
-    
     /* ACTIVITES */
     #activites h2 {
         margin-left: 10px;
