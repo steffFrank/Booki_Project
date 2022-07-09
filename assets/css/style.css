@@ -224,21 +224,21 @@ main {
 
 .main__description {
     display: flex;
+    width: 95%;
+    margin: auto;
     margin-bottom: var(--margin-bottom);
 }
 
 .main__description i {
-    margin: 0 10px;
-    width: 25px;
-    height: 25px;
-    color: var(--clr-white);
-    background-color: var(--clr-blue);
-    border-radius: 50%;
-    font-size: 25px;
-}
-
-.main__description p {
+    height: fit-content;
+    position: relative;
+    color: var(--clr-blue);
     font-size: 14px;
+    margin-right: 10px;
+    border: 2px solid var(--clr-grey);
+    padding: 6px;
+    border-radius: 50%;
+    top: -5px;
 }
 
 /* Hebergement section */
