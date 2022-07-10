@@ -18,7 +18,8 @@
     --margin-bottom: 20px;
     --padding-section: 2%;
     --gap: 20px;
-    --box-shadow: -10px 10px 3px 5px var(--clr-light-blue);
+    --box-shadow--hover: 0 0 10px 5px rgba(0,0,0,0.2);
+    --box-shadow--grey: 0 3px 3px 3px var(--clr-grey);
     --trans-duration: 0.4s;
     /* --transition: all 0.5s ease-in-out; Warning during validation*/
 }
@@ -282,12 +283,14 @@ main {
     padding: 5px;
     background-color: var(--clr-white);
     border-radius: calc(var(--border-radius) * 2);
+    box-shadow: var(--box-shadow--grey);
     transition: box-shadow var(--trans-duration) ease-in-out;
 }
 
 .articles-fig:hover,
 .aside-fig:hover {
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow--hover);
+    color:  var(--clr-blue);
 }
 
 
@@ -332,6 +335,7 @@ main {
     background-color: var(--clr-white);
     border-radius: calc(var(--border-radius) * 2);
     padding: 5px;
+    box-shadow: 0 3px 3px 3px rgba(0,0,0,0.2);
     transition: box-shadow var(--trans-duration) ease-in-out;
 
 }
@@ -378,12 +382,13 @@ main {
 .wrapper-activities__item a figure,
 .wrapper-activities__item figure {
     border-radius: var(--border-radius);
-    box-shadow: 0 5px 5px 5px var(--clr-grey);
+    box-shadow: var(--box-shadow--grey);
     transition: box-shadow var(--trans-duration) ease-in-out;
 }
 
 .wrapper-activities__item figure:hover {
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow--hover);
+    color: var(--clr-blue);
 }
 
 .wrapper-activities img {
@@ -547,7 +552,6 @@ main {
         flex: none;
         margin: 0 auto;
         border-radius: calc(var(--border-radius) * 2);
-        box-shadow: 0 10px 10px 10px var(--clr-grey);
     }
 
     .articles-fig h4 {
