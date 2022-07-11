@@ -18,7 +18,7 @@
     --margin-bottom: 20px;
     --padding-section: 2%;
     --gap: 20px;
-    --box-shadow--hover: 0 0 10px 5px rgba(0,0,0,0.2);
+    --box-shadow--hover: 0 0 10px 5px rgba(0,0,0,0.4);
     --box-shadow--grey: 0 3px 3px 3px var(--clr-grey);
     --trans-duration: 0.4s;
     /* --transition: all 0.5s ease-in-out; Warning during validation*/
