@@ -18,6 +18,7 @@
   --margin-bottom: 20px;
   --padding-section: 2%;
   --gap: 20px;
+  --height-main: 40px;
   --box-shadow--hover: 0 0 10px 5px rgba(0, 0, 0, 0.4);
   --box-shadow--grey: 0 3px 3px 3px var(--clr-grey);
   --trans-duration: 0.4s;
@@ -83,12 +84,7 @@ button {
 span {
   font-weight: var(--fw-bold);
 }
-/* =========================DESKTOP=========================== */
-/* section,
-main {
-  width: 70%;
-  margin: 0 auto;
-} */
+
 
 /* =========================LAPTOP=========================== */
   /* Header Rules */
@@ -149,8 +145,8 @@ main {
 }
 
 .fa-location-dot {
-  width: 40px; 
-  height: 40px;
+  width: var(--height-main); 
+  height: var(--height-main);
   padding: 12px 14px;
   font-size: 15px;
   background-color: var(--clr-grey);
@@ -159,7 +155,7 @@ main {
 }
 
 .main__input {
-  height: 40px;
+  height: var(--height-main);
   border: 1px solid var(--clr-grey);
   outline: none;
 }
@@ -188,37 +184,53 @@ main {
 }
 
 /* FILTERS */
-.main__filters {
+.filters {
   margin-bottom: var(--margin-bottom);
-}
-.main__filters h4 {
-  display: inline-block;
-  margin-right: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.main__filters button {
+.filters__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filters__title {
+  font-size: 14px;
+  margin: 0 20px 0 0;
+}
+
+.filters button {
   width: fit-content;
-  height: 40px;
+  height: var(--height-main);
   margin-right: 20px;
-  padding: 0 10px;
+  padding: 0 20px 0 50px ;
   background-color: var(--clr-white);
   border-radius: var(--btn-radius);
   border: 2px solid var(--clr-grey);
   border-left: none;
-  text-transform: capitalize;
   font-weight: var(--fw-bold);
   transition: all var(--trans-duration) ease-in-out;
 }
 
-.main__filters button:hover {
+.filters__item {
+    position: relative;
+}
+.filters button:hover {
   background-color: var(--clr-blue);
   color: var(--clr-white);
+  border-color: var(--clr-blue);
 }
-.main__filters .fa-solid {
-  position: relative;
-  left: -10px;
-  border-radius: 50%;
-  padding: 12px;
+.filters__item .fa-solid {
+  position: absolute;
+  left: -1px;
+  top: 0; 
+  width: var(--height-main);
+  height: var(--height-main);
+  border-radius: 20px;
+  text-align: center;
+  line-height: var(--height-main);
+  vertical-align: middle;
   background-color: var(--clr-light-blue);
   color: var(--clr-blue);
 }
@@ -470,21 +482,12 @@ main {
 
   .main__input {
     width: 100%;
-    height: 40px;
     border-right: none;
   }
 
   .fa-location-dot {
-    width: 40px;
-    height: 40px;
-    padding: 12px 14px;
-    font-size: 15px;
     border-radius: calc(var(--border-radius) + 3px) 0 0
       calc(var(--border-radius) + 3px);
-  }
-
-  .main__input::placeholder {
-    padding-left: 15px;
   }
 
   .main__btn-search {
@@ -518,13 +521,13 @@ main {
 
   /* FILTERS */
 
-  .main__filters {
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: var(--margin-bottom);
     padding-left: 10px;
   }
-  .main__filters h4 {
-    display: block;
-    font-size: 14px;
+  .filters__title {
     margin-bottom: calc(var(--margin-bottom) / 2);
   }
 
@@ -646,7 +649,7 @@ main {
 
   /* FILTERS */
 
-  .main__filters button {
+  .filters button {
     margin-bottom: calc(var(--margin-bottom) / 2);
   }
 
