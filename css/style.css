@@ -238,18 +238,21 @@ main {
 .main__description {
   display: flex;
   width: 95%;
-  margin: auto;
+  margin: auto 5px;
   margin-bottom: var(--margin-bottom);
+  gap: 10px;
+  font-size: 10px;
 }
 
-.main__description i {
-  height: fit-content;
+.main__description i { 
   position: relative;
+  top: -2px;
   color: var(--clr-blue);
-  font-size: 10px;
-  margin-right: 10px;
-  border: 2px solid var(--clr-grey);
-  padding: 4px 6px;
+  width: 20px;
+  height: 20px;
+  padding: 3px 5px;
+  text-align: center;
+  border: 1px solid var(--clr-grey);
   border-radius: 50%;
 }
 
@@ -515,7 +518,6 @@ main {
   }
 
   .main__description {
-    font-size: 16px;
     margin-bottom: var(--margin-bottom);
   }
 
