@@ -19,8 +19,10 @@
   --padding-section: 2%;
   --gap: 20px;
   --height-main: 40px;
+  --padding-fig: 3px;
   --box-shadow--hover: 0 0 10px 5px rgba(0, 0, 0, 0.4);
   --box-shadow--grey: 0 3px 3px 3px var(--clr-grey);
+  --box-shadow--desktop: 0 3px 3px 3px rgba(0, 0, 0, 0.2);
   --trans-duration: 0.4s;
   --transition: all 0.4s ease-in-out;
 }
@@ -86,7 +88,7 @@ span {
 }
 
 
-/* =========================LAPTOP=========================== */
+/* =========================DESKTOP=========================== */
   /* Header Rules */
 section,
 main {
@@ -122,7 +124,7 @@ main {
   width: 85px;
   padding-top: 20px;
   text-align: center;
-  transition: var(--transition)
+  transition: var(--transition);
 }
 
 .nav__item:hover {
@@ -151,7 +153,7 @@ main {
   font-size: 15px;
   background-color: var(--clr-grey);
   border: 1px solid var(--clr-grey);
-  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  border-radius: calc(var(--border-radius) / 2) 0 0 calc(var(--border-radius) /2);
 }
 
 .main__input {
@@ -175,8 +177,8 @@ main {
   color: var(--clr-white);
   background-color: var(--clr-blue);
   border: none;
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  transition: var(--transition)
+  border-radius: 0 calc(var(--border-radius) / 2) calc(var(--border-radius) / 2) 0;
+  transition: var(--transition);
 }
 .main__btn-search:hover {
   color: var(--clr-blue);
@@ -203,14 +205,14 @@ main {
 .filters button {
   width: fit-content;
   height: var(--height-main);
-  margin-right: 20px;
+  margin-right: 10px;
   padding: 0 20px 0 50px ;
   background-color: var(--clr-white);
   border-radius: var(--btn-radius);
   border: 2px solid var(--clr-grey);
   border-left: none;
   font-weight: var(--fw-bold);
-  transition: var(--transition)
+  transition: var(--transition);
 }
 
 .filters__item {
@@ -294,10 +296,10 @@ main {
 .articles-fig {
   height: 200px;
   flex: 1 30%;
-  padding: 5px;
+  padding: var(--padding-fig);
   background-color: var(--clr-white);
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow--grey);
+  box-shadow: var(--box-shadow--desktop);
   transition: box-shadow var(--trans-duration) ease-in-out;
 }
 
@@ -347,7 +349,7 @@ main {
   display: flex;
   background-color: var(--clr-white);
   border-radius: var(--border-radius);
-  padding: 5px;
+  padding: var(--padding-fig);
   box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.2);
   transition: box-shadow var(--trans-duration) ease-in-out;
 }
@@ -488,8 +490,8 @@ main {
   }
 
   .fa-location-dot {
-    border-radius: calc(var(--border-radius) + 3px) 0 0
-      calc(var(--border-radius) + 3px);
+    border-radius: calc(var(--border-radius) / 2 + 3px) 0 0
+      calc(var(--border-radius) / 2 + 3px);
   }
 
   .main__btn-search {
@@ -502,7 +504,7 @@ main {
     border: none;
     background-color: var(--clr-blue);
     transition: var(--transition);
-    border-radius: calc(var(--border-radius) + 3px);
+    border-radius: calc(var(--border-radius) / 2 + 3px);
     position: relative;
     right: 5px;
   }
@@ -624,7 +626,7 @@ main {
     border-bottom: 3px solid var(--clr-grey);
     width: 50%;
     padding: 0 0 10px 0;
-    transition: var(--transition)
+    transition: var(--transition);
   }
 
   .nav__item:hover {
@@ -636,13 +638,14 @@ main {
   .main__title {
     width: 95%;
     text-align: left;
+    margin-left: 10px;
   }
   .main__title h1 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .main__title p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .main__form {
     width: 95%;
