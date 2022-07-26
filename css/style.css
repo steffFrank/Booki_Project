@@ -165,12 +165,13 @@ main {
   border: 1px solid var(--clr-grey);
   outline: none;
   width: 238px;
+  padding-left: 10px;
+  font-size: 18px;
 }
 
 .main__input::placeholder {
   color: var(--clr-black);
-  font-weight: var(--fw-black);
-  padding-left: 10px;
+  font-weight: var(--fw-bold);
   font-size: 18px;
 }
 
