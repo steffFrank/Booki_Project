@@ -43,7 +43,7 @@ body {
   font-family: "Raleway", sans-serif;
   text-align: left;
   font-size: 16px;
-  /* max-width: 1400px; */
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -527,7 +527,7 @@ main {
 
   .main__btn-mobile {
     display: block;
-    width: 50px;
+    width: 60px;
     border: none;
     background-color: var(--clr-blue);
     transition: var(--transition);
@@ -543,6 +543,7 @@ main {
 
   .fa-magnifying-glass {
     color: white;
+    font-size: 16px;
   }
 
   .main__description {
