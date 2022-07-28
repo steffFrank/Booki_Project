@@ -51,7 +51,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-weight: var(--fw-bold);
+  font-weight: var(--fw-bold);
 }
 h1 {
   font-size: 22px;
@@ -80,8 +80,8 @@ button {
 
 .fa-star {
   font-size: 10px;
-  letter-spacing:-3px;
-  color: rgba(0,0,0,0.1);
+  letter-spacing: -3px;
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .checked {
@@ -92,13 +92,12 @@ span {
   font-weight: var(--fw-bold);
 }
 
-
-/* =========================DESKTOP=========================== */
-  /* Header Rules */
+/* ========================= DESKTOP =========================== */
+/* Header Rules */
 section,
 main {
-    width: 95%;
-    margin: 0 auto;
+  width: 95%;
+  margin: 0 auto;
 }
 .header {
   width: 100%;
@@ -151,14 +150,15 @@ main {
 }
 
 .fa-location-dot {
-  width: var(--height-main); 
+  width: var(--height-main);
   height: var(--height-main);
   text-align: center;
   padding: 15px 0;
   font-size: 18px;
   background-color: var(--clr-grey);
   border: 1px solid var(--clr-grey);
-  border-radius: calc(var(--border-radius) - 5px) 0 0 calc(var(--border-radius) - 5px);
+  border-radius: calc(var(--border-radius) - 5px) 0 0
+    calc(var(--border-radius) - 5px);
 }
 
 .main__input {
@@ -187,7 +187,8 @@ main {
   color: var(--clr-white);
   background-color: var(--clr-blue);
   border: none;
-  border-radius: 0 calc(var(--border-radius) - 5px) calc(var(--border-radius) - 5px) 0;
+  border-radius: 0 calc(var(--border-radius) - 5px)
+    calc(var(--border-radius) - 5px) 0;
   transition: var(--transition);
 }
 .main__btn-search:hover {
@@ -204,9 +205,9 @@ main {
 }
 
 .filters__container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .filters__title {
@@ -218,7 +219,7 @@ main {
   width: fit-content;
   height: var(--height-main);
   margin-right: 10px;
-  padding: 0 20px 0 60px ;
+  padding: 0 20px 0 60px;
   background-color: var(--clr-white);
   border-radius: var(--btn-radius);
   border: 2px solid var(--clr-grey);
@@ -229,7 +230,7 @@ main {
 }
 
 .filters__item {
-    position: relative;
+  position: relative;
 }
 .filters button:hover {
   background-color: var(--clr-blue);
@@ -239,7 +240,7 @@ main {
 .filters__item .fa-solid {
   position: absolute;
   left: -1px;
-  top: 0; 
+  top: 0;
   width: var(--height-main);
   height: var(--height-main);
   border-radius: 50%;
@@ -259,7 +260,7 @@ main {
   font-size: 16px;
 }
 
-.main__description i { 
+.main__description i {
   position: relative;
   top: -2px;
   color: var(--clr-blue);
@@ -558,7 +559,6 @@ main {
     margin-bottom: var(--margin-bottom);
     padding-left: 10px;
   }
-  
 
   /* accomodation */
 
@@ -636,7 +636,7 @@ main {
 @media screen and (max-width: 767px) {
   .header {
     flex-direction: column;
-     margin-bottom: var(--margin-bottom);
+    margin-bottom: var(--margin-bottom);
   }
 
   .header a {
@@ -672,7 +672,7 @@ main {
     text-align: left;
     margin-left: 10px;
   }
- 
+
   .main__form {
     width: 95%;
   }
@@ -718,7 +718,6 @@ main {
     object-fit: cover;
   }
 
-
   /* activities */
   #activities h2 {
     margin-left: 10px;
@@ -737,8 +736,7 @@ main {
     border-radius: var(--border-radius);
   }
   .wrapper-activities img {
-    border-radius: var(--border-radius) var(--border-radius)
-      0 0;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
     height: 150px;
   }
 
